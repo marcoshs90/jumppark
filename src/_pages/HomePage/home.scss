@@ -1,0 +1,95 @@
+@import "../_style/helpers/variables.scss";
+
+.allContainer {
+    background-color: #ffffff;
+    border-radius: 3px;
+    padding: 0;
+    border: 1px solid #e0e0e0;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+
+    img {
+        margin-top: 30px;
+        margin-bottom: 30px; 
+    }
+
+    nav {
+        height: 80px;
+
+        .row {
+            padding-top: 25px;
+
+            button {
+                background-color: $colorThree;
+                padding-left: 25px;
+                padding-right: 25px;
+                width: 88%;
+    
+                i {
+                    margin-left: 10px;
+                }
+            }
+    
+            .search-jump {
+                display: inline-flex;
+    
+                input {
+                    width: 73%;
+                    text-align: center;
+                }
+    
+                .input-group-addon {
+                    background-color: $colorOne;
+                    width: 22%;
+                    margin-left: -2px;
+                    
+                    button {
+                        background-color: transparent;
+                        border: none;
+                        color: #ffffff;
+                        padding: 0;
+                    }
+                }
+            }
+        }
+    }
+
+    section {
+        background-color: $colorOne;
+        height: 60px;
+        display: flex;
+        align-items: center;
+        color: #ffffff;
+    }
+
+    ul {
+        padding: 0;
+        
+        li {
+            list-style: none;
+            height: 50px;
+            border-top: 1px solid #e0e0e0;
+            display: flex;
+            align-items: center;
+            color: $colorOne;
+
+            &:nth-child(1){
+                border-top: none;
+            }
+
+            &:hover {
+                background-color: $colorFour;
+                font-weight: bold;
+            }
+        }
+    }
+}
+
+.copyright {
+    margin-top: 20px;
+    text-align: center;
+    color: #909090;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    letter-spacing: 2px;
+}
